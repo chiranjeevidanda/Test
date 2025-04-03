@@ -1,0 +1,23 @@
+﻿<Project>
+  <PropertyGroup>
+    <SonarQubeTestProject>false</SonarQubeTestProject>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningsAsErrors>S5443,S2257,S5332,S4487,S3998,S4635,S2551,S3449,S2365,S927,S2291,S3265,S2223,S4586,1186,S1006,S2222,S4433,S5659,S2696,S5445,S3218,S4015,S4015,S1944,S2053,S4275,S2346,S2290,S5042,S1163,S3871,S5542,S4502,S4426,S1699,S4792,S3972,S3776,S3329,S5547,S4583,S4019,S3904,S3973,S5034,S4277,S3600,S2692,S1215,S3217,S4524,S3447</WarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningsAsErrors>
+      <WarningsAsErrors>S5443,S2257,S5332,S4487,S3998,S4635,S2551,S3449,S2365,S927,S2291,S3265,S2223,S4586,1186,S1006,S2222,S4433,S5659,S2696,S5445,S3218,S4015,S4015,S1944,S2053,S4275,S2346,S2290,S5042,S1163,S3871,S5542,S4502,S4426,S1699,S4792,S3972,S3776,S3329,S5547,S4583,S4019,S3904,S3973,S5034,S4277,S3600,S2692,S1215,S3217,S4524,S3447</WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+      <PackageReference
+      Include="SonarAnalyzer.CSharp"
+      Version="9.12.0.78982"
+      PrivateAssets="all"
+      Condition="$(MSBuildProjectExtension) == '.csproj'"
+    />
+  </ItemGroup>
+</Project>

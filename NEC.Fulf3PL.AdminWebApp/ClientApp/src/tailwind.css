@@ -1,0 +1,81 @@
+/* src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.scrollable-cell {
+    width: 200px;
+    padding: 5px;
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+
+.outbound-view .empty-scrollable-cell
+{ 
+    border: none;    
+    overflow: auto; 
+    font-family: monospace; 
+    background-color: #f0f0f0;
+    padding: 5px;
+    box-sizing: border-box;
+    max-height: 38px;
+}
+
+.scrollable-textarea, .empty-scrollable-cell {
+    height: 100px; 
+    border: none;    
+    overflow: auto; 
+    font-family: monospace; 
+    background-color: #f0f0f0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+.inbound-view tbody tr td:first-child,
+.sku-view tbody tr td:first-child,
+.outbound-view tbody tr td:first-child {
+    display: none;
+}
+
+.inbound-view thead tr th:first-child,
+.sku-view thead tr th:first-child,
+.outbound-view thead tr th:first-child {
+    display: none;
+}
+
+.outbound-view tbody.divide-y tr td,
+.sku-view tbody.divide-y tr td {
+    white-space: nowrap;
+}
+button.btn-sort:hover {
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+button.btn-sort {
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    font-weight: 500;
+    font-size: .75rem;
+}
+.highlight-color {
+    background-color: #bbf7d0;
+    font-weight: bold;
+}
+.message-box {
+    background-color: #d9a7ab; 
+    color: black; 
+    padding: 2px 4px 0px 10px; 
+    border: 2px solid #f5c6cb; 
+    border-radius: 0; 
+    font-size: 16px; 
+    font-weight: bold;
+    text-align: left; 
+    width: 500px; 
+    margin: 20px;
+    margin-left: 46px;
+    margin-top: 10px;
+}
